@@ -1,11 +1,6 @@
 name: GitHub Actions Parallel Run
 on:
-  workflow_dispatch: null
-  pull_request:
-    branches:
-      - master
-  schedule:
-    - cron: '* 5 * * *'
+  workflow_dispatch:
 jobs:
   Google-Test:
     timeout-minutes: 120
